@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trainingsplan</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Mein Trainingsplan</h1>
+  </header>
+  <main id="exercise-container"></main>
+
+  <template id="exercise-template">
+    <article class="exercise-card">
+      <img class="exercise-img" alt="Gerät"/>
+      <div class="exercise-info">
+        <h2 class="exercise-name"></h2>
+        <p class="exercise-note"></p>
+        <label>Gewicht (kg):
+          <input type="number" class="weight-input" min="9" step="4"/>
+        </label>
+        <label>Wiederholungen:
+          <input type="number" class="reps-input" min="1" step="1"/>
+        </label>
+        <button class="save-btn">Speichern</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
